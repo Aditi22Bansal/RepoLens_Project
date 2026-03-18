@@ -110,11 +110,14 @@ const Home = () => {
                                 style={{ cursor: 'pointer', display: 'flex', flexDirection: 'column', gap: '0.8rem' }}
                                 onClick={() => handleHistoryClick(repo)}
                             >
-                                <div className="flex-between">
-                                    <h3 style={{ margin: 0, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                                        <FolderTree size={16} /> {repo.owner}/{repo.name}
+                                <div className="flex-between" style={{ gap: '1rem' }}>
+                                    <h3 style={{ margin: 0, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', overflow: 'hidden', flex: 1 }}>
+                                        <FolderTree size={16} style={{ flexShrink: 0 }} />
+                                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                            {repo.owner}/{repo.name}
+                                        </span>
                                     </h3>
-                                    <div className="flex-center" style={{ gap: '4px', fontSize: '0.85rem' }}>
+                                    <div className="flex-center" style={{ gap: '4px', fontSize: '0.85rem', flexShrink: 0 }}>
                                         <Star size={14} color="var(--warning-color)" /> {repo.stars}
                                     </div>
                                 </div>
