@@ -14,7 +14,7 @@ const Home = () => {
     useEffect(() => {
         const fetchHistory = async () => {
             try {
-                const res = await axios.get('http://localhost:5000/api/repo/history');
+                const res = await axios.get('https://repolensproject.vercel.app/api/repo/history');
                 setHistory(res.data.data);
             } catch (err) {
                 console.error("Failed to fetch history:", err);
@@ -32,7 +32,7 @@ const Home = () => {
         setLoading(true);
         setError(null);
         try {
-            const API_BASE = 'http://localhost:5000/api/repo';
+            const API_BASE = 'https://repolensproject.vercel.app/api/repo';
             const res = await axios.post(`${API_BASE}/analyze`, { url });
             const repoData = res.data.data;
             navigate(`/repo/${repoData.owner}/${repoData.name}`, { state: { repoData } });

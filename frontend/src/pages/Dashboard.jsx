@@ -20,7 +20,7 @@ const Dashboard = () => {
         if (!repoData) {
             const fetchRepo = async () => {
                 try {
-                    const res = await axios.post('http://localhost:5000/api/repo/analyze', { url: `https://github.com/${owner}/${name}` });
+                    const res = await axios.post('https://repolensproject.vercel.app/api/repo/analyze', { url: `https://github.com/${owner}/${name}` });
                     setRepoData(res.data.data);
                 } catch (err) {
                     setError('Failed to fetch repository metadata.');
@@ -39,7 +39,7 @@ const Dashboard = () => {
         setIsSearching(true);
         setDirectAnswer(null);
         try {
-            const res = await axios.post(`http://localhost:5000/api/repo/${repoData._id}/search`, { query: searchQuery });
+            const res = await axios.post(`https://repolensproject.vercel.app/api/repo/${repoData._id}/search`, { query: searchQuery });
             setSearchResults(res.data.data.results || []);
             setDirectAnswer(res.data.data.answer || null);
         } catch (err) {
