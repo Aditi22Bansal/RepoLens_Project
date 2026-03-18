@@ -16,7 +16,10 @@
 ## � Quick Demo
 
 <!-- Drag and drop your .gif or .mp4 file underneath this line in GitHub! -->
-![RepoLens Demo Video](https://via.placeholder.com/800x400.png?text=RepoLens+Demo+Video+Goes+Here)
+
+https://github.com/user-attachments/assets/b237ea96-4708-4721-8728-6967cfdaea7b
+
+
 
 ---
 
