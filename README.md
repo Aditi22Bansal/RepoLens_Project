@@ -1,4 +1,5 @@
 # RepoLens 🔍
+**🚀 Live Demo: [https://frontend-eta-blond-85.vercel.app](https://frontend-eta-blond-85.vercel.app)**
 
 ### What it does exactly
 
@@ -12,7 +13,14 @@
 
 ---
 
-## 🌟 Key Features
+## � Quick Demo
+
+<!-- Drag and drop your .gif or .mp4 file underneath this line in GitHub! -->
+![RepoLens Demo Video](https://via.placeholder.com/800x400.png?text=RepoLens+Demo+Video+Goes+Here)
+
+---
+
+## �🌟 Key Features
 
 ### 📊 Comprehensive Health Scoring
 RepoLens calculates a multi-dimensional health score (0-100) based on:
