@@ -111,9 +111,9 @@ const Home = () => {
                                 onClick={() => handleHistoryClick(repo)}
                             >
                                 <div className="flex-between" style={{ gap: '1rem' }}>
-                                    <h3 style={{ margin: 0, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', overflow: 'hidden', flex: 1 }}>
+                                    <h3 style={{ margin: 0, fontSize: '1.1rem', display: 'flex', alignItems: 'center', gap: '0.5rem', overflow: 'hidden', flex: 1, minWidth: 0 }}>
                                         <FolderTree size={16} style={{ flexShrink: 0 }} />
-                                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap', minWidth: 0 }}>
                                             {repo.owner}/{repo.name}
                                         </span>
                                     </h3>
